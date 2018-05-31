@@ -1,2 +1,3 @@
-mkdir -p build/logs
+#!/bin/bash
+-p build/logs
 ls -al
