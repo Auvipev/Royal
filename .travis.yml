@@ -15,11 +15,12 @@ install:
     - chmod +x php-coveralls.phar
     - php php-coveralls.phar --version
     - chmod +x bash/travis/before_script.sh
-    - chmod +x bash/travis/script.sh
 after_success:
     - travis_retry php php-coveralls.phar -v
 before_script: ./bash/travis/before_script.sh
-script: ./bash/travis/script.sh
+script:
+    -./vendor/bin/phpunit --coverage-clover ./build/logs/clover.xml
+    -./vendor/bin/psalm
 cache:
     directories:
         - vendor
