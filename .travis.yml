@@ -19,8 +19,8 @@ after_success:
     - travis_retry php php-coveralls.phar -v
 before_script: ./bash/travis/before_script.sh
 script:
-    -./vendor/bin/phpunit --coverage-clover ./build/logs/clover.xml
-    -./vendor/bin/psalm
+    - ./vendor/bin/phpunit --coverage-clover ./build/logs/clover.xml
+    - ./vendor/bin/psalm
 cache:
     directories:
         - vendor
