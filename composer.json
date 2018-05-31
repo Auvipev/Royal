@@ -1,0 +1,36 @@
+{
+    "name": "auvipev/royal",
+    "description": "A PSR-7 compliant http request handler.",
+    "keywords": [
+        "php",
+        "psr7-compliant",
+        "http-request-handler",
+        "secure-by-default"
+    ],
+    "license": "GPL-3.0",
+    "require": {
+        "php": ">=7.2",
+        "psr/http-message": "^1.0",
+        "ext-json": "*"
+    },
+    "authors": [
+        {
+            "name": "Nicholas English",
+            "email": "nenglish443@outlook.com",
+            "homepage": "https://github.com/Auvipev"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "Auvipev\\Royal\\": "./src"
+        }
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^7.1",
+        "vimeo/psalm": "^2.0"
+    },
+    "config": {
+        "optimize-autoloader": true
+    },
+    "prefer-stable": true
+}
