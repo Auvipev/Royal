@@ -1,3 +1,3 @@
 #!/bin/bash
--p build/logs
+mkdir -p build/logs
 ls -al
