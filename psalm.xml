@@ -1,6 +1,5 @@
 <?xml version="1.0"?>
-<psalm name="Royal Analysis Tests."
-       stopOnFirstError="false"
+<psalm name="Royal Analysis Tests"
        useDocblockTypes="true"
        totallyTyped="true">
     <projectFiles>
