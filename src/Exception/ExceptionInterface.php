@@ -17,6 +17,6 @@ use Throwable;
  * @interface ExceptionInterface.
  * @extends   Throwable.
  */
-class ExceptionInterface extends Throwable
+interface ExceptionInterface extends Throwable
 {
 }
