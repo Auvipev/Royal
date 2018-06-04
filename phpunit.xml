@@ -29,6 +29,8 @@
             <directory suffix=".php">./src</directory>
             <exclude>
                 <directory>./vendor</directory>
+                <directory>./bash</directory>
+                <directory>./build</directory>
             </exclude>
         </whitelist>
     </filter>
